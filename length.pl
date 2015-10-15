@@ -1,2 +1,2 @@
-length([],0).
-length([_|T],N):- N1 is N-1, length(T,N1).
+length2([],0).
+length2([_|T],N):- length2(T,N1), N is N1+1.
